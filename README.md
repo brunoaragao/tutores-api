@@ -2,7 +2,7 @@
 Api para o CRUD de tutores.
 
 ## Sobre
-Esta API foi desenvolvida para o [Desafio Back-end 6](https://www.alura.com.br/challenges/back-end-6) da [Alura](https://www.alura.com.br/).
+Esta API foi desenvolvida para a primeira semana do [Desafio Back-end 6](https://www.alura.com.br/challenges/back-end-6) da [Alura](https://www.alura.com.br/).
 
 ## Pré-requisitos
 - [Docker](https://docs.docker.com/install/)
