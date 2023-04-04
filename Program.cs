@@ -1,11 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<TutorContext>(options =>
     options.UseInMemoryDatabase("TutoresInMemory"));
-
-builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -45,7 +43,7 @@ tutores.MapDelete("/{id}", async (int id, TutorContext context) =>
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapControllers();
+app.UseHttpsRedirection();
 
 app.Run();
 
